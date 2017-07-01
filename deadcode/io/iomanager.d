@@ -39,7 +39,7 @@ enum IOMode
 struct FileEntry
 {
     string path;
-    SysTime createdTime;
+    // SysTime createdTime;
     SysTime lastModifiedTime;
     SysTime lastAccessedTime;
     ulong size;

@@ -214,7 +214,7 @@ protected:
 
     final FileEntry createFileEntry(DirEntry e)
     {
-        return FileEntry(e.name, e.timeCreated, e.timeLastModified, e.timeLastAccessed, e.size, e.isFile, e.isDir, e.isSymlink);
+        return FileEntry(e.name, /*e.timeCreated,*/ e.timeLastModified, e.timeLastAccessed, e.size, e.isFile, e.isDir, e.isSymlink);
     }
 }
 
