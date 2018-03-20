@@ -26,6 +26,7 @@ class LocalFileAccess : FileAccess
 		final switch (mode)
 		{
 			case IOMode.read:
+				debug if (!exists(path)) return null;
 				modeString = "r";
 				break;
 			case IOMode.write:
